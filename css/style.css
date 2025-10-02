@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a.active {
+    border-bottom: 2px solid #00bcd4;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #00bcd4, #2196f3);
+    color: white;
+}
+
+.hero .btn {
+    background: white;
+    color: #2196f3;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* -------- FORMULARIO -------- */
+form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* -------- ANIMACIÓN DEL H1 -------- */
+h1 {
+    font-size: 2em;
+    background: linear-gradient(90deg, #00bcd4, #2196f3, #673ab7, #ff4081);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moverColores 6s linear infinite;
+}
+
+@keyframes moverColores {
+    0% { background-position: 0% }
+    100% { background-position: 400% }
+}
